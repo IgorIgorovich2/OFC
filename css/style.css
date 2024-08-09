@@ -1,3 +1,18 @@
+:root {
+    /* Existing colors */
+    --primary-blue: #0066cc;
+    --light-gray: #f8f8f8;
+    --dark-gray: #333;
+
+    /* Additional colors */
+    --secondary-blue: #3498db;
+    --accent-orange: #e67e22;
+    --accent-green: #2ecc71;
+    --light-blue: #ebf5fb;
+    --dark-blue: #2c3e50;
+    --off-white: #ecf0f1;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,7 +20,7 @@ body {
 }
 
 header {
-    background-color: #f8f8f8;
+    background-color: #ecf0f1;
     padding: 1rem;
 }
 
@@ -39,4 +54,56 @@ header {
 
 main {
     padding: 2rem;
+}
+
+.left-panel {
+    position: fixed;
+    top: 80px; /* Adjust this value based on your nav bar height */
+    left: 20px;
+    width: calc(50% - 40px);
+    height: calc(100vh - 100px);
+    border: 2px solid #0066cc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow-y: auto;
+    margin-right: 20px;
+}
+
+.left-panel h2 {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    margin: 0;
+}
+
+.right-panel{
+    position: fixed;
+    top: 80px; /* Adjust this value based on your nav bar height */
+    right: 20px;
+    width: calc(50% - 40px);
+    height: calc(100vh - 100px);
+    border: 2px solid #0066cc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow-y: auto;
+    margin-left: 20px;
+}
+
+.right-panel h2 {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    margin: 0;
+}
+
+.left-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 23px; /* Slightly smaller than the panel's border-radius */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
