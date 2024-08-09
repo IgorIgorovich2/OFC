@@ -20,16 +20,15 @@ body {
 }
 
 header {
-    background-color: #ecf0f1;
+    background-color: #f8f8f8;
     padding: 1rem;
 }
 
 .nav-list {
+    display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
 .nav-list li {
@@ -47,11 +46,11 @@ header {
     color: #0066cc;
 }
 
-.nav-list a.active {
+/*.nav-list a.active {
     border-bottom: 2px solid #0066cc;
     color: #0066cc;
 }
-
+*/
 main {
     padding: 2rem;
 }
@@ -107,3 +106,121 @@ main {
     top: 0;
     left: 0;
 }
+/* this should be added to every css document on this website */
+.mode-switch {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mode-name {
+    font-weight: bold;
+    padding: 0 10px;
+    position: relative;
+  }
+  
+  .mode-name::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0066cc;
+    transition: width 0.3s ease;
+  }
+  
+  .mode-name.active::after {
+    width: 100%;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #0066cc;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 0.25rem;
+    position: relative;
+}
+
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0066cc;
+    transition: width 0.3s ease;
+}
+
+.nav-list a:hover::after,
+.nav-list a.active::after {
+    width: 100%;
+}
+
+.nav-list a:hover {
+    color: #0066cc;
+}
+
+.nav-list a.active {
+    color: #0066cc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
