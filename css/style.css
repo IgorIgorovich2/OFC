@@ -18,11 +18,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    padding-top: 60px; /* Adjust this value based on your header's height */
 }
 
 header {
     background-color: var(--light-gray);
     padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .nav-list {
@@ -54,6 +60,7 @@ header {
 */
 main {
     padding: 2rem;
+    margin-top: 20px; /* Add some space between nav and main content */
 }
 
 .left-panel {
@@ -107,6 +114,10 @@ main {
     top: 0;
     left: 0;
 }
+.left-panel, .right-panel {
+  top: 100px; /* Adjust this value to account for the fixed header */
+}
+
 /* this should be added to every css document on this website */
 .mode-switch {
     display: flex;
@@ -223,4 +234,5 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
