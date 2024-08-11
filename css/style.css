@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    background-color: #f8f8f8;
+    background-color: var(--light-gray);
     padding: 1rem;
 }
 
@@ -38,13 +38,13 @@ header {
 
 .nav-list a {
     text-decoration: none;
-    color: #333;
+    color: var(--dark-gray);
     font-weight: bold;
     padding-bottom: 0.25rem;
 }
 
 .nav-list a:hover {
-    color: #0066cc;
+    color: var(--primary-blue);
 }
 
 /*.nav-list a.active {
@@ -62,7 +62,7 @@ main {
     left: 20px;
     width: calc(50% - 40px);
     height: calc(100vh - 100px);
-    border: 2px solid #0066cc;
+    border: 2px solid var(--primary-blue);
     border-radius: 25px;
     box-sizing: border-box;
     padding: 20px;
@@ -83,7 +83,7 @@ main {
     right: 20px;
     width: calc(50% - 40px);
     height: calc(100vh - 100px);
-    border: 2px solid #0066cc;
+    border: 2px solid var(--primary-blue);
     border-radius: 25px;
     box-sizing: border-box;
     padding: 20px;
@@ -126,7 +126,7 @@ main {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #0066cc;
+    background-color: var(--primary-blue);
     transition: width 0.3s ease;
   }
   
@@ -170,7 +170,7 @@ main {
   }
   
   input:checked + .slider {
-    background-color: #0066cc;
+    background-color: var(--primary-blue);
   }
   
   input:checked + .slider:before {
@@ -187,7 +187,7 @@ main {
   
   .nav-list a {
     text-decoration: none;
-    color: #333;
+    color: var(--dark-gray);
     font-weight: bold;
     padding-bottom: 0.25rem;
     position: relative;
@@ -200,7 +200,7 @@ main {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #0066cc;
+    background-color: var(--primary-blue);
     transition: width 0.3s ease;
 }
 
@@ -210,11 +210,11 @@ main {
 }
 
 .nav-list a:hover {
-    color: #0066cc;
+    color: var(--primary-blue);
 }
 
 .nav-list a.active {
-    color: #0066cc;
+    color: var(--primary-blue);
 }
 
 nav {
@@ -224,4 +224,3 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
 }
-
