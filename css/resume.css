@@ -236,3 +236,26 @@ nav {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.course-list {
+    float: right;
+    margin-top: 3rem;
+    padding-left: 2rem;
+    font-size: 25px;
+    font-weight: medium;
+    
+}
+
+.course-list a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-panel .course-list {
+    order: 2;
+}
