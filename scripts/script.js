@@ -17,15 +17,3 @@ modeToggle.addEventListener('change', () => {
 // Set initial state
 lightMode.classList.add('active');
 
-document.addEventListener('DOMContentLoaded', function() {
-    const currentPage = window.location.pathname.split("/").pop();
-    const navLinks = document.querySelectorAll('.nav-list a');
-    
-    navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
-    });
-});
